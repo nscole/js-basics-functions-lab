@@ -18,8 +18,20 @@ function distanceFromHqInFeet(pickUpLocation){
     } else if (pickUpLocation <= 42) {
         return (streetHQ - pickUpLocation) * 264;
     }
-
 }
+
+// 7-9 tests
+function distanceTravelledInFeet(start, end){
+    if (start >= end) {
+        return (start - end) * 264;
+    } else if (start <= end) {
+        return (end - start) * 264;
+    }
+}
+
+
+
+
 /*
 
 */
